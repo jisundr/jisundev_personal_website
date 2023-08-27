@@ -2,7 +2,7 @@
 
 import { Box, Button, Container, Flex, Text } from "@chakra-ui/react";
 
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
     <Flex as="main" minH="inherit" width="inherit" pt="14" pb="16">
       <Container
@@ -18,8 +18,12 @@ const Home: React.FC = () => {
               Hey there
             </Text>
             <Box mb="8" color="primaryHeading" fontWeight="semibold">
-              <Text fontSize="5xl">I'm Jayson</Text>
-              <Text fontSize="4xl">Full Stack Web Developer</Text>
+              <Text as="h1" fontSize="5xl">
+                I'm Jayson
+              </Text>
+              <Text as="h2" fontSize="4xl">
+                Full Stack Web Developer
+              </Text>
             </Box>
             <Text mb="8">
               I currently work as a software engineer in Manila, Philippines,
@@ -36,4 +40,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomePage;

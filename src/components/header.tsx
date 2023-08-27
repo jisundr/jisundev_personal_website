@@ -2,16 +2,17 @@
 
 import {
   Box,
+  Button,
   Container,
   Flex,
   HStack,
   IconButton,
-  Link,
-  useBoolean,
   useColorMode,
 } from "@chakra-ui/react";
 import { FC } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
+import NextLink from "next/link";
+import NavLink from "./nav-link";
 
 const Header: FC = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -24,15 +25,21 @@ const Header: FC = () => {
         display="flex"
         justifyContent="space-between"
       >
-        <Box py="4">jisun.dev</Box>
+        <Box py="4">
+          <Button
+            variant="link"
+            as={NextLink}
+            href="/"
+            _hover={{ textDecoration: "none" }}
+            colorScheme="oceanGreen"
+          >
+            jisun.dev
+          </Button>
+        </Box>
         <HStack>
           <Flex>
-            <Link py="4" px="2">
-              Blog
-            </Link>
-            <Link py="4" px="2">
-              Get in Touch
-            </Link>
+            <NavLink href="/blog">Blog</NavLink>
+            <NavLink href="/connect-with-me">Connect With Me</NavLink>
           </Flex>
           <IconButton
             onClick={toggleColorMode}
