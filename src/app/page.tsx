@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
             </Text>
             <Box mb="8" color="primaryHeading" fontWeight="semibold">
               <Text as="h1" fontSize="5xl">
-                I'm Jayson
+                I&apos;m Jayson
               </Text>
               <Text as="h2" fontSize="4xl">
                 Full Stack Web Developer
@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
               development.
             </Text>
             <Button variant="outline" colorScheme="oceanGreen">
-              Get in Touch
+              Connect With Me
             </Button>
           </Box>
         </Flex>
