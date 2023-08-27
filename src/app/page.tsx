@@ -17,7 +17,7 @@ const Home: React.FC = () => {
             <Text fontSize="xl" mb="1" fontWeight="medium">
               Hey there
             </Text>
-            <Box mb="8" color="primary" fontWeight="semibold">
+            <Box mb="8" color="primaryHeading" fontWeight="semibold">
               <Text fontSize="5xl">I'm Jayson</Text>
               <Text fontSize="4xl">Full Stack Web Developer</Text>
             </Box>
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
               with a focus on the specialized field of web application
               development.
             </Text>
-            <Button variant="outline" colorScheme="primary">
+            <Button variant="outline" colorScheme="oceanGreen">
               Get in Touch
             </Button>
           </Box>
